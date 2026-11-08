@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Palm &amp; Pearls</title>
+<meta name="description" content="Palm & Pearls: homes of lasting value in Dubai and Maharashtra, and hand-picked fine cars from PNP Motors.">
+<link rel="canonical" href="https://palmnpearls.com/">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#2A331F">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Palm & Pearls">
+<meta property="og:description" content="Real estate in Dubai and Maharashtra, and fine cars from PNP Motors.">
+<meta property="og:url" content="https://palmnpearls.com/">
+<meta property="og:image" content="https://palmnpearls.com/motors/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Jost:wght@400;500&display=swap">
+<style>
+:root{
+  --olive:#343F27; --deep:#2A331F; --grove:#45522F;
+  --ivory:#F5F0E3; --paper-2:#FAF7EF;
+  --gold:#B8923A; --gold-hi:#D4B46A; --gold-lo:#7E5E20; --champagne:#F0DA98;
+  --ink:#343F27; --ink-2:rgba(52,63,39,.74); --hair-i:rgba(126,94,32,.32);
+  --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --sans:'Jost','Century Gothic',Futura,'Avenir Next',sans-serif;
+  --ease:cubic-bezier(.45,0,.15,1);
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:radial-gradient(120% 90% at 50% 0%,var(--grove) 0%,var(--olive) 45%,var(--deep) 100%);color:var(--ivory);font:400 16px/1.6 var(--sans);min-height:100svh;display:grid;place-items:center;padding:24px 16px;overflow-x:hidden}
+.backdrop-logo{position:fixed;inset:0;display:grid;place-items:center;pointer-events:none;opacity:.08}
+.backdrop-logo img{width:min(760px,90vw);height:auto}
+.overlay{position:fixed;inset:0;background:rgba(30,37,22,.55);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.pop{position:relative;z-index:1;width:min(720px,100%);background:var(--paper-2);color:var(--ink);border:1px solid var(--hair-i);padding:clamp(28px,5vw,52px);text-align:center;box-shadow:0 30px 80px rgba(20,26,14,.45);animation:in .9s var(--ease) both}
+@keyframes in{from{opacity:0;transform:translateY(18px) scale(.98)}to{opacity:1;transform:none}}
+.pop .logo{display:block;width:min(260px,70%);height:auto;margin:0 auto;filter:brightness(.62) saturate(1.2)}
+.label{font:500 11px/1.5 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--gold-lo);margin:28px 0 0}
+h1{font:500 clamp(32px,5vw,46px)/1.1 var(--serif);margin:10px 0 0;text-wrap:balance}
+.sub{color:var(--ink-2);margin:12px auto 0;max-width:44ch}
+.choices{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+.choice{display:flex;flex-direction:column;align-items:center;gap:10px;padding:28px 18px 24px;border:1px solid var(--hair-i);text-decoration:none;color:var(--ink);background:#fff;transition:border-color .5s var(--ease),transform .5s var(--ease),box-shadow .5s var(--ease)}
+.choice:hover,.choice:focus-visible{border-color:var(--gold);transform:translateY(-3px);box-shadow:0 14px 34px rgba(52,63,39,.14);outline:none}
+.choice svg{width:44px;height:44px;fill:none;stroke:var(--gold-lo);stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}
+.choice b{font:500 clamp(24px,3vw,30px)/1.1 var(--serif)}
+.choice span{font-size:14px;color:var(--ink-2)}
+.choice em{font:500 11px/1 var(--sans);font-style:normal;letter-spacing:.28em;text-transform:uppercase;color:var(--deep);background:var(--gold-hi);padding:12px 18px;margin-top:8px}
+.foot{margin-top:26px;font-size:12px;color:var(--ink-2)}
+.foot a{color:var(--gold-lo)}
+@media (max-width:560px){.choices{grid-template-columns:1fr}.choice{padding:22px 16px}}
+@media (prefers-reduced-motion:reduce){.pop{animation:none}.choice{transition:none}}
+</style>
+</head>
+<body>
+<div class="backdrop-logo" aria-hidden="true"><img src="assets/logo.svg" alt=""></div>
+<div class="overlay" aria-hidden="true"></div>
+
+<main class="pop" role="dialog" aria-modal="true" aria-labelledby="q">
+  <img class="logo" src="assets/logo.svg" alt="Palm &amp; Pearls">
+  <p class="label">Welcome</p>
+  <h1 id="q">What brings you here today?</h1>
+  <p class="sub">Choose what you are looking for and we will take you there.</p>
+  <nav class="choices" aria-label="Purpose of visit">
+    <a class="choice" href="/estate/">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 42V20L24 8l16 12v22"/><path d="M18 42V28h12v14"/><path d="M4 42h40"/></svg>
+      <b>A property</b>
+      <span>Homes in Dubai and Maharashtra</span>
+      <em>Real estate</em>
+    </a>
+    <a class="choice" href="/motors/">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 32v-6l5-9h22l7 9h2v6"/><path d="M6 32h4m10 0h10m10 0h2"/><circle cx="15" cy="32" r="4"/><circle cx="35" cy="32" r="4"/><path d="M14 26h22"/></svg>
+      <b>A luxury car</b>
+      <span>Hand-picked fine cars</span>
+      <em>PNP Motors</em>
+    </a>
+  </nav>
+  <p class="foot">Palm &amp; Pearls · Dubai · Mumbai · Navi Mumbai · <a href="mailto:info@palmnpearls.com">info@palmnpearls.com</a></p>
+</main>
+</body>
+</html>
